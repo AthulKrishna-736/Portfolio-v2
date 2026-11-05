@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "CMU Serif";
+  src: url("./assets/cmunrm.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Codec Pro";
+  src: url("./assets/CodecPro-Regular.ttf") format("truetype");
+}
+
+@theme {
+  --font-cmu: "CMU Serif", serif;
+  --font-codec: "Codec Pro", sans-serif;
+}
