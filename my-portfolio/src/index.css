@@ -14,3 +14,7 @@
   --font-cmu: "CMU Serif", serif;
   --font-codec: "Codec Pro", sans-serif;
 }
+
+body{
+@apply bg-[#efede5] text-[#9f6c5c]
+}
