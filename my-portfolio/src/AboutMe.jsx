@@ -20,7 +20,7 @@ function AboutMe() {
     return (
         <div className="flex w-full h-full justify-center">
             {/* Left */}
-            <div className="flex flex-col justify-center items-start w-1/3 px-10 gap-30">
+            <div className="flex flex-col justify-center w-1/3 gap-30 pl-15">
                 <div className="flex flex-col gap-8">
                     <h1 className="font-cmu text-7xl">
                         Athul <br />Krishna K S
@@ -40,16 +40,16 @@ function AboutMe() {
             </div>
 
             {/* Center */}
-            <div className="flex flex-col w-1/3 justify-center gap-10 items-center px-15">
+            <div className="flex flex-col w-1/3 justify-center items-start px-20 gap-5">
                 <div>
                     <img
-                        className="rounded-3xl"
+                        className="w-75 rounded-3xl"
                         src="/athul_1.png"
                         alt="image_1"
                     />
                 </div>
 
-                <div className="flex justify-start w-full gap-8">
+                <div className="flex gap-5">
                     <img
                         onClick={() => {
                             window.open(
@@ -58,7 +58,7 @@ function AboutMe() {
                                 "noopener,noreferrer"
                             )
                         }}
-                        className="w-10 h-14 cursor-pointer"
+                        className="w-10 h-12 cursor-pointer"
                         src="/linkedin_logo.svg"
                         alt="linkedin_logo"
                     />
@@ -71,7 +71,7 @@ function AboutMe() {
                                 "noopener,noreferrer"
                             )
                         }}
-                        className="w-11 h-14 cursor-pointer"
+                        className="w-10 h-12 cursor-pointer"
                         src="/twitter_logo.svg"
                         alt="twitter_logo"
                     />
@@ -80,7 +80,7 @@ function AboutMe() {
                         onClick={() => {
                             window.location.href = "mailto:athulkrishna736@gmail.com";
                         }}
-                        className="w-14 h-14 cursor-pointer"
+                        className="w-12 h-12 cursor-pointer"
                         src="/gmail_logo.svg"
                         a lt="gmail_logo"
                     />
@@ -93,7 +93,7 @@ function AboutMe() {
                                 "noopener,noreferrer"
                             )
                         }}
-                        className="w-10 h-14 cursor-pointer"
+                        className="w-10 h-12 cursor-pointer"
                         src="/github_logo.svg"
                         alt="github_logo"
                     />
@@ -101,8 +101,8 @@ function AboutMe() {
             </div>
 
             {/* Right */}
-            <div className="flex flex-col w-1/3 justify-center items-start gap-15 px-10">
-                <div className="flex flex-col gap-5">
+            <div className="flex flex-col w-1/3 justify-center items-start gap-10 pr-15">
+                <div className="flex flex-col gap-3">
                     {aboutPoints.map((point) => (
                         <AboutPoint
                             key={point.number}
@@ -112,11 +112,11 @@ function AboutMe() {
                 </div>
 
                 <div>
-                    <img 
-                    className="h-70 w-70 rounded-3xl"
-                    src="/athul_2.JPG"
-                     alt="image_2" 
-                     />
+                    <img
+                        className="h-55 w-55 rounded-3xl"
+                        src="/athul_2.JPG"
+                        alt="image_2"
+                    />
                 </div>
             </div>
         </div>
