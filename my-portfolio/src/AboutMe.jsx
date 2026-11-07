@@ -51,6 +51,7 @@ function AboutMe() {
 
                 <div className="flex gap-5">
                     <img
+                        title="LinkedIn"
                         onClick={() => {
                             window.open(
                                 "https://www.linkedin.com/in/athul-krishna-ks-573a55317/",
@@ -64,6 +65,7 @@ function AboutMe() {
                     />
 
                     <img
+                        title="Twitter / X"
                         onClick={() => {
                             window.open(
                                 "https://x.com/athulkrishna736",
@@ -77,15 +79,17 @@ function AboutMe() {
                     />
 
                     <img
+                        title="Email"
                         onClick={() => {
                             window.location.href = "mailto:athulkrishna736@gmail.com";
                         }}
                         className="w-12 h-12 cursor-pointer"
                         src="/gmail_logo.svg"
-                        a lt="gmail_logo"
+                        alt="gmail_logo"
                     />
 
                     <img
+                        title="Github"
                         onClick={() => {
                             window.open(
                                 "https://github.com/AthulKrishna-736",
