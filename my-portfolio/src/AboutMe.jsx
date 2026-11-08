@@ -107,9 +107,9 @@ function AboutMe() {
             {/* Right */}
             <div className="flex flex-col w-1/3 justify-center items-start gap-10 pr-15">
                 <div className="flex flex-col gap-3">
-                    {aboutPoints.map((point) => (
+                    {aboutPoints.map((point, index) => (
                         <AboutPoint
-                            key={point.number}
+                            key={index}
                             {...point}
                         />
                     ))}
