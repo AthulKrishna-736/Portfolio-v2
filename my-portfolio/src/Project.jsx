@@ -7,7 +7,7 @@ function Project() {
 
     const [project, setProject] = useState({
         title: "Test1",
-        description: "Test2",
+        description: "dummy description checking the width of flexbox if else needed to set limit",
         technologies: ["react", "node", "java"]
 
     })
@@ -36,8 +36,10 @@ function Project() {
             </div>
 
             {/* Right */}
-            <div className="bg-red-400 w-1/3 p-10">
-                <ProjectList />
+            <div className="flex flex-col gap-13 w-1/3 py-15 px-5">
+                <ProjectList project={project} />
+                <ProjectList project={project} />
+                <ProjectList project={project} />
             </div>
         </div>
     )
