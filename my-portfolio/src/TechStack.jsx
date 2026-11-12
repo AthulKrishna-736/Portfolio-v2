@@ -45,11 +45,12 @@ function TechStack() {
             </div>
 
             {/* Right */}
-            <div className="bg-red-300 w-2/3 p-15">
+            <div className="flex flex-wrap gap-8 justify-center items-center w-2/3 py-20">
                 {techStack.map((t, index) => {
                     return (
                         <img
-                            className="h-20 w-20"
+                            title={t.alt}
+                            className="h-30 w-30 cursor-pointer"
                             key={index}
                             src={t.path}
                             alt={t.alt}
