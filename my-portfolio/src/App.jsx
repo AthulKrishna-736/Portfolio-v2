@@ -1,5 +1,4 @@
 import AboutMe from "./AboutMe"
-import ContactMe from "./ContactMe"
 import Project from "./Project"
 import TechStack from "./TechStack"
 
@@ -21,11 +20,6 @@ function App() {
       {/* Tech stack */}
       <section className="h-screen snap-start">
         <TechStack />
-      </section>
-
-      {/* Contact Me*/}
-      <section className="h-screen snap-start">
-        <ContactMe />
       </section>
     </main>
   )
